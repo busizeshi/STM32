@@ -1,0 +1,53 @@
+# Keil MDK Project Files
+*.uvprojx
+*.uvoptx
+*.uvgui*
+*.bak
+*.tmp
+
+# Compiled Files
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.htm
+*.lst
+*.lnp
+*.sct
+*.sct.*
+*.build_log.htm
+*.crf
+*.o
+*.d
+*.dep
+*.lnk
+*.plg
+*.tra
+*.dla
+*.axf.*
+
+# Debug Files
+*.dbg
+*.scvd
+
+# Temporary Files
+*.tmp
+*.temp
+Thumbs.db
+
+# IDE Specific
+*.idea/
+.vscode/
+*.user
+
+# Build Directory
+Build/
+Output/
+Listing/
+
+# STM32 Specific
+*.iex
+*.htm.*
+RTE/_*
+!RTE/RTE_Components.h
