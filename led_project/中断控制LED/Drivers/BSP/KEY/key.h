@@ -10,6 +10,6 @@
 #define KEY_PRESSED GPIO_PIN_RESET
 
 void KEY_Init(void);
-uint8_t KEY_Scan();
+uint8_t KEY_Scan(void);
 
 #endif /* __KEY_H */

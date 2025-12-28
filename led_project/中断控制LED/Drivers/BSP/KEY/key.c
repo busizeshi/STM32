@@ -14,7 +14,8 @@ void KEY_Init(void)
     HAL_GPIO_Init(KEY_PORT_PORT, &GPIO_InitStruct);
 }
 
-uint8_t KEY_Scan()
+
+uint8_t KEY_Scan(void)
 {
     static uint8_t key_release = 1;
 

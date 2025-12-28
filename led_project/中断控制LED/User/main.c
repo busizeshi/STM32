@@ -1,7 +1,7 @@
 #include "./BSP/KEY/key.h"
 #include "./SYSTEM/delay/delay.h"
-#include "./BSP/BEEP/beep.h"
 #include "./BSP/LED/led.h"
+#include "./BSP/EXTI/exti.h"
 #include "./SYSTEM/sys/sys.h"
 
 int main(void)
@@ -11,18 +11,13 @@ int main(void)
     delay_init(72);
     KEY_Init();
     LED_Init();
+    EXTI_Init();
 
-    uint8_t last = 1;
+    LED0(1);
 
     while (1)
     {
-        uint8_t now = KEY_Scan();
-
-        if (last == 0 && now == 0)
-        {
-            LED_Toggle(LED0_ID);
-        }
-
-        last = now;
+        printf("Main loop running...\n");
+        delay_ms(1000);
     }
 }
